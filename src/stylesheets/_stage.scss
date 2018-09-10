@@ -1,0 +1,31 @@
+#stage{
+  .stage-wrapper{
+    position: relative;
+
+    &:after{
+      background-color: rgba(0, 0, 0, 0.3);
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    img{
+      max-width: 100%;
+    }
+
+    .overlay-text{
+      bottom: 50px;
+      position: absolute;
+      left: 50px;
+      z-index: 5;
+
+      h2{
+        color: $white;
+        @include heading-font;
+      }
+    }
+  }
+}

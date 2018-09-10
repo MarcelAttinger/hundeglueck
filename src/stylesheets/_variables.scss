@@ -1,0 +1,28 @@
+// Variables
+
+$white: #fff !default;
+$black: #000 !default;
+
+$textcolor: #8E8D8A;
+$primary: #1A1A1D;
+$secondary: #FFFFFF;
+$highlight: #6F2232;
+
+//
+// Breakpoints
+//
+$breakpoints: (
+        'before-mobile' : '(max-width: 767px)', // S
+        'mobile' : '(min-width: 768px)',
+        'before-tablet' : '(max-width: 1023px)', // M
+        'tablet' : '(min-width: 1024px)',
+        'before-desk': '(max-width: 1141px)', // L
+        'desk' : '(min-width: 1142px)' // XL
+);
+
+$breakpoint-small: map-get($breakpoints, before-mobile);
+$breakpoint-portable: map-get($breakpoints, mobile);
+$breakpoint-tablet: map-get($breakpoints, before-tablet);
+$breakpoint-after-tablet: map-get($breakpoints, tablet);
+$breakpoint-before-desk: map-get($breakpoints, before-desk);
+$breakpoint-desk: map-get($breakpoints, desk);
