@@ -1,7 +1,10 @@
 .left-right-teaser{
 
-  &.right {
-    flex-direction: row-reverse;
+  &:nth-child(even){
+    background-color: #7CC576;
+    .row{
+      flex-direction: row-reverse;
+    }
   }
 
   img{

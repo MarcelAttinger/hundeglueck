@@ -1,33 +1,41 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import logo from '../img/logo.jpg';
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+  <header>
+	  <div className="container">
+		  <div className="row">
+			  <div className="col">
+				  <div id="logo">
+					  <img src={logo} alt="Hundeglück Schönbuch Logo"/>
+					  <h1 className="h6 navbar-brand">
+						  <span>Hundeglück Schönbuch</span>
+						  <span>Annik & Klaus Wanner</span>
+					  </h1>
+				  </div>
+			  </div>
+			  <div className="col">
+				  <nav className="main-navigation">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Shop</a>
+						</li>
+						<li>
+							<a href="#">Über mich</a>
+						</li>
+						<li>
+							<a href="#">Kontakt</a>
+						</li>
+					</ul>
+				  </nav>
+			  </div>
+		  </div>
+	  </div>
+  </header>
 )
 
 export default Header

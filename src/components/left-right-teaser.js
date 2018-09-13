@@ -3,21 +3,23 @@ import PropTypes from 'prop-types';
 import {v4} from 'uuid';
 
 const LeftRightTeaser = ({leftRightTeasers}) => (
-	<section>
-		<div className="container">
-			{leftRightTeasers.map(teaser => (
-				<div key={v4()} className={`row left-right-teaser ${teaser.imagePosition}`}>
-					<div className="col-8 image">
-						<img src={teaser.image} alt={teaser.imageAlt} />
-					</div>
-					<div className="col-4 text">
-						<h3>{teaser.headline}</h3>
-						<p>{teaser.paragraph}</p>
+	<div>
+		{leftRightTeasers.map(teaser => (
+			<section key={v4()} className="left-right-teaser">
+				<div className="container">
+					<div className="row">
+						<div className="col-8 image">
+							<img src={teaser.image} alt={teaser.imageAlt}/>
+						</div>
+						<div className="col-4 text">
+							<h3>{teaser.headline}</h3>
+							<p>{teaser.paragraph}</p>
+						</div>
 					</div>
 				</div>
-			))}
-		</div>
-	</section>
+			</section>
+		))}
+	</div>
 );
 
 LeftRightTeaser.propTypes = {

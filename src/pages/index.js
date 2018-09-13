@@ -80,23 +80,6 @@ export const pageQuery = graphql`
                 headline
                 description
             }
-            portfolio {
-                image
-                imageAlt
-                item {
-                    linkTarget
-                    image
-                    imageAlt
-                    headline
-                    description
-                    testimonialHeadline
-                    testimonialList {
-                        listItem
-                    }
-                    technicalHeadline
-                    technicalDescription 
-                }
-            } 
             aboutMe {
                 headline
                 leftText
@@ -105,7 +88,6 @@ export const pageQuery = graphql`
             lrteasers {
                image
                imageAlt
-               imagePosition
                headline
                paragraph
             } 

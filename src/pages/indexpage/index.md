@@ -25,17 +25,14 @@ aboutMe:
 lrteasers:
   - image: img/chaya.jpg
     imageAlt: Hund Chaya
-    imagePosition: left
     headline: Artgerechte Hundehaltung
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
   - image: img/chaya.jpg
     imageAlt: Hund Chaya
-    imagePosition: right
     headline: Artgerechte Hundehaltung
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
   - image: img/chaya.jpg
     imageAlt: Hund Chaya
-    imagePosition: left
     headline: Artgerechte Hundehaltung
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
 ---
