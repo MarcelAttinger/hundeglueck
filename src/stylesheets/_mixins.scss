@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 @mixin body-font() {
-  font-family: 'Lato';
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 @mixin heading-font() {
@@ -10,8 +11,7 @@
   font-family: 'Montserrat';
 }
 
-@mixin heading-font() {
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 80px;
+@mixin serif-font() {
+  font-weight: 400;
+  font-family: 'Abril Fatface', cursive;
 }

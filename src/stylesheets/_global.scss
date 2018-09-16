@@ -1,6 +1,7 @@
 // Typography
 body {
   @include body-font;
+  color: $textcolor;
 }
 
 h1,
@@ -15,11 +16,75 @@ h6 {
 //Grid Override
 .container{
   @media (min-width: 1200px){
-     max-width: 1440px;
+     max-width: 1200px;
   }
 }
 
+// Standard Elements
+
 section{
   padding: 5rem 0;
+
+  &.grey-background{
+    background-color: $basic-grey;
+  }
+}
+
+a{
+  color: $textcolor;
+  transition: color 0.35s ease-in-out;
+
+  &:hover{
+    color: $highlight;
+    text-decoration: none;
+  }
+}
+
+ul.floating{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li{
+    margin-right: 20px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.btn{
+  border-radius: 0;
+  font-size: 11px;
+  letter-spacing: 2px;
+  outline: 0;
+  padding: 8px 37px;
+  text-transform: uppercase;
+
+  &:active,
+  &:focus{
+    outline: 0;
+  }
+
+  &.btn-primary{
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    color: #fff;
+    background: transparent;
+
+    &:hover{
+      background-color: white;
+      border-color: $white;
+      color: $black;
+    }
+  }
+}
+
+
+//Google Maps
+.google-map{
+  height: 500px;
+  width: 100%;
 }
 

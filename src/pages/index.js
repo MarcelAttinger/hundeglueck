@@ -3,6 +3,9 @@ import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import Stage from '../components/stage';
 import LeftRightTeaser from '../components/left-right-teaser';
+import FeaturedProducts from '../components/featured-products';
+import Map from '../components/map-section';
+
 
 export default class IndexPage extends React.Component {
 	render() {
@@ -13,10 +16,35 @@ export default class IndexPage extends React.Component {
 		return (
 			<div>
 				<Stage/>
-				<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />
+				<FeaturedProducts />
 
-				<div className="container">
-					<h2>Lese hier meine nächsten Einträge:</h2>
+				{/*<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />*/}
+
+				<div className="wide-teaser">
+					<div className="container">
+						<div className="row">
+							<div className="text-area">
+								<h2 className="mb-4">Wir stellen uns vor</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto cum dolorem
+								   enim ex id itaque nisi obcaecati quo similique! Amet distinctio eaque explicabo, fugiat hic
+								   iure possimus praesentium quibusdam repellendus veniam? Accusamus aspernatur commodi
+								   cupiditate eum officiis perferendis quam, quisquam tempore. Aliquid aspernatur corporis
+								   deleniti eius facere id nulla perspiciatis quae sapiente tenetur totam, ullam! Adipisci
+								   alias aliquam amet asperiores aut debitis distinctio dolor eligendi, error est eveniet
+								   exercitationem explicabo illum iure magnam molestiae numquam, placeat quasi quo voluptatum.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex officiis, possimus. Cupiditate,
+								   distinctio enim error eveniet id ipsa iure non nostrum porro quaerat quos repudiandae saepe sapiente.
+								   Asperiores delectus dolor, expedita laudantium molestiae quam ratione. Alias culpa eveniet facere magnam
+								   minus modi natus quam tempora totam vitae. Ab, laborum nobis!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<Map />
+
+				<section className="container">
+					<h3>Lese hier meine nächsten Einträge:</h3>
 					{posts.map(({node: post}) => (
 						<div
 							className="content"
@@ -40,9 +68,7 @@ export default class IndexPage extends React.Component {
 							</p>
 						</div>
 					))}
-				</div>
-
-				<Link to="/page-2/">Go to page 2</Link>
+				</section>
 			</div>
 		)
 	}
