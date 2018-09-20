@@ -1,5 +1,5 @@
 header {
-  background-color: transparent;
+  background-color: $black;
   color: $white;
   letter-spacing: 3px;
   padding-bottom: 25px;
@@ -10,6 +10,10 @@ header {
   top: 0;
   width: 100%;
   z-index: 9999;
+
+  &.home{
+    background-color: transparent;
+  }
 
   &.navbar-shrink{
     background-color: rgba(10, 10, 10, 1);

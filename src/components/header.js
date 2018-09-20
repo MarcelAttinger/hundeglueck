@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Link from 'gatsby-link';
 
 
-
 export default class Header extends React.Component {
 	constructor(props) {
 		super(props);
@@ -12,17 +11,28 @@ export default class Header extends React.Component {
 	// Collapse Navbar
 	navbarCollapse() {
 		if (window.scrollY > 50) {
-			console.log('in');
 			document.querySelector("header").classList.add("navbar-shrink");
 		} else {
-			console.log('out');
 			document.querySelector("header").classList.remove("navbar-shrink");
 		}
 	}
 
-	componentDidMount(){
+	componentDidMount() {
 		window.addEventListener('scroll', this.navbarCollapse);
+
+		if (location.pathname === '/' || location.pathname === '/about') {
+			document.querySelector("header").classList.add('home');
+		}
 	}
+
+	componentDidUpdate(){
+		if (location.pathname === '/' || location.pathname === '/about') {
+			document.querySelector("header").classList.add('home');
+		}else{
+			document.querySelector("header").classList.remove('home');
+		}
+	}
+
 
 	render(){
 
@@ -48,10 +58,10 @@ export default class Header extends React.Component {
 										<a href="#">Shop</a>
 									</li>
 									<li>
-										<Link to="/about">Über mich</Link>
+										<Link to="/about">Über uns</Link>
 									</li>
 									<li>
-										<a href="#">Blog</a>
+										<Link to="/blog-overview">Blog</Link>
 									</li>
 									<li>
 										<Link to="/contact/">Kontakt</Link>

@@ -20,6 +20,13 @@ h6 {
   }
 }
 
+// Margin Top for Pages except Home
+.blog-overview,
+.blog-post,
+.contact{
+  margin-top: 124px;
+}
+
 // Standard Elements
 
 section{
@@ -86,5 +93,16 @@ ul.floating{
 .google-map{
   height: 500px;
   width: 100%;
+
+  .fa-map-marker{
+    left: -37px;
+    position: relative;
+    top: -50px;
+
+    &:before{
+      color: #EA4335;
+      font-size: 50px;
+    }
+  }
 }
 

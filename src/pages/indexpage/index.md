@@ -2,26 +2,21 @@
 templateKey: 'index-page'
 newPage: false
 title: Ich hacke mich rein
-masthead:
-    image: img/hello.jpg
-    name: Marcel Attinger
-    claim: Grafik Designer - Web Entwickler - User Experience Developer
-services:
-  - headline: Alles beginnt mit einer guten Konzeption
-    description: Wir legen in einem ausführlichem Gespräch gemeinsam die Ziele für deinen Webauftritt fest. Auf dieser Basis erarbeite ich für dich ein maßgeschneidertes Konzept.
-  - headline: Design verbindet Information und Verstehen!
-    description: Lorem Ipsum
-  - headline: Umsetzung
-    description: Lorem Ipsum
-aboutMe:
-    headline: Über mich
-    leftText: Hi, mein Name ist Marcel und ich bin seit 2013 als Webentwickler tätig. In
-              dieser Zeit konnte ich bereits mit vielen Kunden und Kollegen spannende Projekte
-              umsetzen. Unkomplizierte Kommunikation, schnelle Reaktionszeiten und der Einsatz der
-              neuesten Technologien zählen zu meinen Stärken.
-    rightText: Mir ist im Umgang mit Kunden wichtig direkt im Vorgespräch die bestmögliche
-               Lösung zu identifizieren. So könnnen wir gezielt eine Strategie entwickeln um ihren
-               Webauftritt perfekt auf Ihre Bedürfnisse abzustimmen. Reminder Studium
+stage:
+    image: ../img/chaya.jpg
+    headline: Willkommen!
+    subHeadline: Bei uns steht Ihr Hund im Vordergrund! Wir bieten alles, damit sich Ihr treuer Begleiter rundum wohl fühlt
+    buttonText: Mehr anzeigen
+    buttonTarget: #
+wideTeaser:
+    headline: Wir stellen uns vor
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto cum dolorem
+                 enim ex id itaque nisi obcaecati quo similique! Amet distinctio eaque explicabo, fugiat hic
+                 iure possimus praesentium quibusdam repellendus veniam? Accusamus aspernatur commodi
+                 cupiditate eum officiis perferendis quam, quisquam tempore. Aliquid aspernatur corporis
+                 deleniti eius facere id nulla perspiciatis quae sapiente tenetur totam, ullam! Adipisci
+                 alias aliquam amet asperiores aut debitis distinctio dolor eligendi, error est eveniet
+                 exercitationem explicabo illum iure magnam molestiae numquam, placeat quasi quo voluptatum.
 lrteasers:
   - image: img/chaya.jpg
     imageAlt: Hund Chaya

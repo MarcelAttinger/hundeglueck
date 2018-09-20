@@ -4,7 +4,7 @@ import Map from '../components/map-section';
 const ContactTemplate = () => {
 
 	return (
-		<section className="contact">
+		<div className="contact">
 			<Map />
 			<section className="section">
 				<div className="container text-center mb-4 mt-4">
@@ -60,7 +60,7 @@ const ContactTemplate = () => {
 					</div>
 				</div>
 			</section>
-		</section>
+		</div>
 	)
 };
 
