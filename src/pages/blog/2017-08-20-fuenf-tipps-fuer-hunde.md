@@ -1,5 +1,4 @@
 ---
-newPage: true
 templateKey: blog-post
 title: 5 Tipps für Hundehalter
 date: 2016-12-17T15:04:10.000Z
@@ -7,8 +6,9 @@ previewImage: /img/blog/preview/jax.jpg
 blogImage: /img/blog-1.jpg
 subheadline: So könnt ihr bequem von zuhause aus euer Hundefutter selbst herstellen.
 ---
-
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+
+![Jax springt](/img/jax-leckerli.jpg)
 
 While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
 
