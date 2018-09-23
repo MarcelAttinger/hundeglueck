@@ -24,13 +24,13 @@ collections:
         label: "Startseite"
         name: "home"
         fields:
-           - {label: Bühne, name: stage, widget: object, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}, {label: Unterüberschrift, name: subheadline, widget: string}, {label: Linkziel, name: buttonTarget, widget: string}, {label: Linktext, name: buttonText, widget: string}]}
+           - {label: Bühne, name: stage, widget: object, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}, {label: Unterüberschrift, name: subHeadline, widget: string}, {label: Linkziel, name: buttonTarget, widget: string}, {label: Linktext, name: buttonText, widget: string}]}
            - {label: Bildteaser, name: featuredProducts, widget: list, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}]}
-           - {label: Vorstellung, name: wideTeaser, widget: object, fields: [{label: Überschrift, name: headline, widget: string}, {label: Beschreibung, name: description, widget: string}]}
+           - {label: Vorstellung, name: wideTeaser, widget: object, fields: [{label: Überschrift, name: headline, widget: string}, {label: Beschreibung, name: description, widget: text}]}
       - file: "src/pages/about/index.md"
         label: "Über uns"
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: Bühne, name: stage, widget: object, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}, {label: Unterüberschrift, name: subheadline, widget: string}, {label: Linkziel, name: buttonTarget, widget: string}, {label: Linktext, name: buttonText, widget: string}]}
-          - {label: Über uns Beschreibung, name: description, widget: string}
+          - {label: Über uns Beschreibung, name: description, widget: text}
