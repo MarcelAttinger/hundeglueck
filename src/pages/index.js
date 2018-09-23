@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import PropTypes from 'prop-types';
 import Stage from '../components/stage';
-import LeftRightTeaser from '../components/left-right-teaser';
 import FeaturedProducts from '../components/featured-products';
 import WideTeaser from '../components/wide-teaser';
 
@@ -11,7 +9,6 @@ export default class IndexPage extends React.Component {
 	render() {
 		const {data} = this.props;
 		const {edges: posts} = data.allMarkdownRemark;
-console.log(posts[0].node.frontmatter.featuredProducts);
 
 		return (
 			<div>
@@ -53,13 +50,6 @@ console.log(posts[0].node.frontmatter.featuredProducts);
 	}
 }
 
-IndexPage.propTypes = {
-	data: PropTypes.shape({
-		allMarkdownRemark: PropTypes.shape({
-			edges: PropTypes.array
-		})
-	})
-};
 
 export const pageQuery = graphql`
   query IndexQuery {
