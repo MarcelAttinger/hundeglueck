@@ -13,9 +13,12 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "NewPage", name: "newPage", widget: "hidden", default: "true"}
       - {label: "Überschrift", name: "title", widget: "string"}
+      - {label: "Unterüberschrift", name: "subheadline", widget: "text"}
       - {label: "Verröffentlichumsdatum", name: "date", widget: "datetime"}
-      - {label: "Beschreibung", name: "description", widget: "text"}
+      - {label: "Vorschaubild auf Übersichtsseite", name: "previewImage", widget: "image"}
+      - {label: "Bild über dem Blogartikel", name: "blogImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Seiten"
