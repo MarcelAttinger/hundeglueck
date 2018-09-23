@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 
 const BlogPostTemplate = ({
 	                          content,
-	                          description,
+	                          subheadline,
 	                          title,
 	                          blogImage
                           }) => {
@@ -26,9 +26,7 @@ const BlogPostTemplate = ({
 					<div className="text">
 						<h1>{title}</h1>
 						<div className="subheadline">
-							In meiner langjährigen Erfahrung als Hundehalterin und Trainerin habe ich selbst viel im
-							Internet recherchiert und gestöbert.
-							Heute möchte ich mein Wissen teilen und lade gerne zum Austausch ein.
+							{subheadline}
 						</div>
 						<div className="content" dangerouslySetInnerHTML={{__html: content}}/>
 					</div>
@@ -44,7 +42,7 @@ const BlogPost = ({data}) => {
 	return (
 		<BlogPostTemplate
 			content={post.html}
-			description={post.frontmatter.description}
+			subheadline={post.frontmatter.subheadline}
 			title={post.frontmatter.title}
 			blogImage={post.frontmatter.blogImage}
 		/>
@@ -61,7 +59,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
+        subheadline
         blogImage
       }
     }

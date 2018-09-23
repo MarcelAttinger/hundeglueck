@@ -5,7 +5,7 @@ title: Agility Training für Hunde
 date: 2016-12-17T15:04:10.000Z
 previewImage: /img/blog/preview/blog-long.jpg
 blogImage: /img/blog-1.jpg
-description: Werden Sie fit mit Ihrem Hund
+subheadline: Werden Sie fit mit Ihrem Hund
 ---
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
