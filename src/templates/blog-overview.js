@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import ArticleHeader from '../components/article-header';
+import blogpic from "../img/blog-1.jpg";
+import Masonry from 'react-masonry-component';
 
 class BlogOverview extends React.Component {
 	render() {
@@ -10,30 +11,53 @@ class BlogOverview extends React.Component {
 		//Blog Posts Data
 		const {edges: posts} = data.blogPost;
 
+		const childElements = posts.map(({node}) => {
+			return (
+				<div className="col-4 teaser" key={node.fields.slug}>
+					<Link to={node.fields.slug}>
+						<img src={node.frontmatter.previewImage} alt="test"/>
+						<span className="text-overlay">
+							<h3>{node.frontmatter.title}</h3>
+						</span>
+					</Link>
+				</div>
+			)
+		});
+
 		return (
 			<div className="blog-overview">
-				<ArticleHeader />
-
-				<div className="blog-teaser">
+				<div className="article-header">
+					<figure>
+						<img src={blogpic} alt="Blogpic"/>
+					</figure>
 					<div className="container">
 						<div className="row">
-							<div className="col">
-								{posts.map(({ node }) => {
-									const title = node.fields.slug;
-									return (
-										<div key={node.fields.slug}>
-											<h3>
-												<Link to={node.fields.slug}>
-													{title}
-												</Link>
-											</h3>
-											<small>{node.frontmatter.date}</small>
-											<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-										</div>
-									)
-								})}
+							<div className="col article-header-content">
+								<div id="breadcrumb">
+									<Link to="/">
+										Home
+									</Link>
+									<span> > </span>
+									<span>Blog</span>
+								</div>
+								<div className="text">
+									<h1>Entdecken Sie meinen Blog</h1>
+									<div className="subheadline">
+										In meiner langjährigen Erfahrung als Hundehalterin und Trainerin habe ich selbst
+										viel im Internet recherchiert und gestöbert.
+										Heute möchte ich mein Wissen teilen und lade gerne zum Austausch ein.
+									</div>
+								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<div className="container blog-teaser">
+					<div className="row">
+						<Masonry>
+							{childElements}
+						</Masonry>
 					</div>
 				</div>
 			</div>
@@ -66,9 +90,10 @@ query Name {
         fields {
           slug
         }
-        frontmatter {
+        frontmatter { 
           date(formatString: "DD MMMM, YYYY")
           title
+          previewImage
         }
       }
     }

@@ -3,8 +3,25 @@ footer{
   color: $white;
   padding: 10px;
 
+  .footer-links{
+    display: flex;
+
+    a{
+      color: $white;
+      margin-left: 20px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:hover{
+        color: $highlight;
+      }
+    }
+  }
+
   .social-media{
-    justify-content: flex-end;
+    float: right;
 
     a{
       color: $white;
@@ -12,6 +29,11 @@ footer{
 
       &:before{
         font-size: 20px;
+        transition: color 0.35s ease-in-out;
+      }
+
+      &:hover:before{
+        color: $highlight;
       }
     }
   }

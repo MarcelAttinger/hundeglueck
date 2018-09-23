@@ -1,11 +1,11 @@
 ---
 newPage: true
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
+title: Agility Training für Hunde
 date: 2016-12-17T15:04:10.000Z
-previewImage: /img/blog/preview/rasierer-retina.jpg
+previewImage: /img/blog/preview/blog-long.jpg
 blogImage: /img/blog-1.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+description: Werden Sie fit mit Ihrem Hund
 ---
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.

@@ -9,7 +9,6 @@ export const AboutPageTemplate = (props) => {
 			<Stage stageprops={props} />
 			<div className="container text-center mb-4 mt-4">
 				<div className="col-lg-8 ml-auto mr-auto">
-					<h2>{props.title}</h2>
 					<p>{props.description}</p>
 				</div>
 			</div>
@@ -33,7 +32,7 @@ const AboutPage = ({data}) => {
 			headline={post.frontmatter.stage.headline}
 		    subHeadline={post.frontmatter.stage.subHeadline}
 			buttonText={post.frontmatter.stage.buttonText}
-			buttonHref={post.frontmatter.stage.buttonHref}
+			buttonTarget={post.frontmatter.stage.buttonTarget}
 		/>
 	)
 };
@@ -55,7 +54,8 @@ export const pageQuery = graphql`
            image
            headline
            subHeadline 
-           buttonText 
+           buttonText
+           buttonTarget 
          }
       }
     }

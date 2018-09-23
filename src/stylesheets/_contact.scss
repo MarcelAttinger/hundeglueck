@@ -1,4 +1,5 @@
 .contact{
+  margin-bottom: $module-margin-bot;
 
   section{
     padding-bottom: 0;
@@ -12,6 +13,60 @@
     li{
       strong{
         display: block;
+      }
+    }
+  }
+
+  form{
+
+    .form-group{
+      margin-bottom: 23px;
+      position: relative;
+
+      label{
+        color: #495057;
+        left: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        opacity: 0;
+        position: absolute;
+        top: 3px;
+        transition: all 0.35s ease-in-out;
+        transform: translateY(0);
+      }
+
+      input{
+        border: none;
+        border-bottom: 1px solid $lightgray;
+        border-radius: 0;
+        height: auto;
+        padding-bottom: 2px;
+        padding-left: 0;
+        transition: border-color 0.35s ease-in-out;
+
+        &:focus{
+          border-color: $highlight;
+          box-shadow: none;
+
+          & + label{
+            color: $highlight;
+            opacity: 1;
+            transform: translateY(-14px);
+          }
+        }
+      }
+
+      textarea{
+        border: 1px solid $lightgray;
+        padding: 5px;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        & + label{
+          display: none;
+        }
       }
     }
   }

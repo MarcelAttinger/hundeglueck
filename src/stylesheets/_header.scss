@@ -63,7 +63,6 @@ header {
             }
           }
         }
-
       }
 
       .main-navigation {
@@ -77,6 +76,7 @@ header {
 
           a{
             color: rgba(255,255,255,0.7);
+            font-size: 14px;
             transition: color 0.35s ease-in-out;
 
             &:hover{

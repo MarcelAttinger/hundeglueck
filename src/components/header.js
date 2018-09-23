@@ -55,13 +55,13 @@ export default class Header extends React.Component {
 										<Link to="/">Home</Link>
 									</li>
 									<li>
-										<a href="#">Shop</a>
-									</li>
-									<li>
 										<Link to="/about">Über uns</Link>
 									</li>
 									<li>
 										<Link to="/blog-overview">Blog</Link>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.anifit.de/content/index_ger.html">Shop</a>
 									</li>
 									<li>
 										<Link to="/contact/">Kontakt</Link>

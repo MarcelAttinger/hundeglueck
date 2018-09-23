@@ -10,15 +10,13 @@ import WideTeaser from '../components/wide-teaser';
 export default class IndexPage extends React.Component {
 	render() {
 		const {data} = this.props;
-		console.log({data});
 		const {edges: posts} = data.allMarkdownRemark;
-
-		console.log(posts);
+console.log(posts[0].node.frontmatter.featuredProducts);
 
 		return (
 			<div>
 				<Stage stageprops={posts[0].node.frontmatter.stage} />
-				<FeaturedProducts />
+				<FeaturedProducts featuredProducts={posts[0].node.frontmatter.featuredProducts} />
 
 				{/*<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />*/}
 
@@ -83,10 +81,15 @@ export const pageQuery = graphql`
 	            headline
 	            subHeadline
 	            buttonText
+	            buttonTarget
 	        }
 	        wideTeaser { 
 	            headline
 	            description 
+	        }
+	        featuredProducts {
+	            image
+	            headline
 	        }
           }
         }

@@ -30,12 +30,13 @@ const ContactTemplate = () => {
 								<li>
 									<span className="location">
 										<strong>Unser Standort</strong>
-										90 Madison Ave, New York, 10016
+										Birkenstraße 2, 71155 Altdorf
 									</span>
 								</li>
 								<li>
 									<span className="email">
 										<strong>Schreiben Sie uns an!</strong>
+										<a href="mailto:hi@meineEmail.de">hi@meineEmail.de</a>
 									</span>
 								</li>
 							</ul>
@@ -43,16 +44,16 @@ const ContactTemplate = () => {
 						<div className="col-sm-6">
 							<form action="#">
 								<div className="form-group">
+									<input type="text" id="name" className="form-control" placeholder="Name" />
 									<label htmlFor="name">Name</label>
-									<input type="text" id="name" className="form-control" placeholder="Name eingeben..." />
 								</div>
 								<div className="form-group">
+									<input type="email" id="email" className="form-control" placeholder="E-Mail" />
 									<label htmlFor="email">E-Mail</label>
-									<input type="email" id="email" className="form-control" placeholder="E-Mail eingeben..." />
 								</div>
 								<div className="form-group">
-									<label htmlFor="textarea">Ihre Nachricht:</label>
-									<input type="textarea" id="textarea" className="form-control" placeholder="Nachricht eingeben..." />
+									<textarea rows="6" id="textarea" className="form-control" placeholder="Ihre Nachricht" />
+									<label htmlFor="textarea">Ihre Nachricht</label>
 								</div>
 								<button type="submit" className="btn btn-secondary">Submit</button>
 							</form>

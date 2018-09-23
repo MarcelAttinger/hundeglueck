@@ -7,7 +7,7 @@ stage:
     headline: Willkommen!
     subHeadline: Bei uns steht Ihr Hund im Vordergrund! Wir bieten alles, damit sich Ihr treuer Begleiter rundum wohl fühlt
     buttonText: Mehr anzeigen
-    buttonTarget: #
+    buttonTarget: /blog-overview/
 wideTeaser:
     headline: Wir stellen uns vor
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto cum dolorem
@@ -30,4 +30,11 @@ lrteasers:
     imageAlt: Hund Chaya
     headline: Artgerechte Hundehaltung
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+featuredProducts:
+  - image: img/products/dog1.jpg
+    headline: Anifit Produkte
+  - image: img/products/dog2.jpg
+    headline: Unser Blog
+  - image: img/products/dog2.jpg
+    headline: Hundephysiotherapie
 ---
