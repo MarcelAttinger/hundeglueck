@@ -41,10 +41,12 @@ const BlogPost = ({data}) => {
 
 	return (
 		<BlogPostTemplate
+			newPage={post.frontmatter.newPage}
 			content={post.html}
 			subheadline={post.frontmatter.subheadline}
 			title={post.frontmatter.title}
 			blogImage={post.frontmatter.blogImage}
+			previewImage={post.frontmatter.previewImage}
 		/>
 	)
 };
@@ -57,10 +59,12 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        newPage
         date(formatString: "MMMM DD, YYYY")
         title
         subheadline
         blogImage
+        previewImage
       }
     }
   }
