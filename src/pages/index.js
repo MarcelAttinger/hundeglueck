@@ -80,6 +80,8 @@ export const pageQuery = graphql`
 	        featuredProducts {
 	            image
 	            headline
+	            linkTarget
+	            blank
 	        }
           }
         }

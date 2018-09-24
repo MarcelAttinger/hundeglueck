@@ -6,10 +6,15 @@ export default class Stage extends React.Component {
 		super(props);
 	}
 
+	scrollToSection(e){
+		e.preventDefault();
+		console.log('The link was clicked.');
+	}
+
 	renderButton() {
 		if(this.props.stageprops.buttonTarget != undefined) {
 			return (
-				<a href={this.props.stageprops.buttonTarget} className="btn btn-primary">{this.props.stageprops.buttonText}</a>
+				<a href={this.props.stageprops.buttonTarget} onClick={this.scrollToSection} className="btn btn-primary">{this.props.stageprops.buttonText}</a>
 			);
 		}
 	}
@@ -22,8 +27,7 @@ export default class Stage extends React.Component {
 		}
 	}
 
-	render(data){
-
+	render(){
 		return(
 			<div style={{backgroundImage: 'url(' + this.props.stageprops.image + ')'}} id="stage">
 				<div className="overlay-text">

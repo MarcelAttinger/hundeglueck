@@ -13,7 +13,6 @@
   align-items: flex-end;
   justify-content: center;
 
-
   &:after {
     opacity: 0.4;
     background: rgba(0, 0, 0, 1);
@@ -35,6 +34,8 @@
   }
 
   .overlay-text {
+    animation-name: stage-animation;
+    animation-duration: 2s;
     padding-bottom: 150px;
     text-align: center;
     z-index: 10;

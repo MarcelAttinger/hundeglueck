@@ -33,8 +33,14 @@ lrteasers:
 featuredProducts:
   - image: img/products/dog1.jpg
     headline: Anifit Produkte
+    linkTarget: test
+    blank: true
   - image: img/products/dog2.jpg
     headline: Unser Blog
+    linkTarget: /blog-overview/
+    blank: false
   - image: img/products/dog2.jpg
     headline: Hundephysiotherapie
+    linkTarget: http://www.pfotenimpuls.de/
+    blank: true
 ---

@@ -1,14 +1,30 @@
 footer{
   background-color: $black;
   color: $white;
-  padding: 10px;
+  padding: 20px 10px 10px;
+
+  h3{
+    font-size: 16px;
+    font-weight: bold;
+  }
 
   .footer-links{
-    display: flex;
+
+    table{
+      tr {
+        td{
+          vertical-align: top;
+
+          &:first-child{
+            padding-right: 10px;
+          }
+        }
+      }
+    }
 
     a{
       color: $white;
-      margin-left: 20px;
+      display: block;
 
       &:first-child{
         margin-left: 0;
@@ -23,17 +39,26 @@ footer{
   .social-media{
     float: right;
 
-    a{
-      color: $white;
-      font-size: 0;
+    div{
+      display: flex;
 
-      &:before{
-        font-size: 20px;
-        transition: color 0.35s ease-in-out;
-      }
+      a{
+        color: $white;
+        font-size: 0;
+        margin-right: 10px;
 
-      &:hover:before{
-        color: $highlight;
+        &:before{
+          font-size: 25px;
+          transition: color 0.35s ease-in-out;
+        }
+
+        &.facebook{
+          background-image: url(../img/facebook.png);
+          background-size: 100%;
+          display: block;
+          height: 25px;
+          width: 25px;
+        }
       }
     }
   }

@@ -16,3 +16,14 @@
   font-weight: 400;
   font-family: 'Abril Fatface', cursive;
 }
+
+@keyframes stage-animation{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

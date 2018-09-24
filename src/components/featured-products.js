@@ -1,28 +1,53 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {v4} from 'uuid';
 
-const FeaturedProducts = ({featuredProducts}) => (
-	<div>
-		<section className="featured-products">
-			<div className="container">
-				<div className="row">
-					{featuredProducts.map(product => (
-					<div key={v4()} className="col-4 product">
-						<a href="#">
-							<img src={product.image} alt="test" />
-							<span className="text-overlay">
-								<span>
-									{product.headline}
-								</span>
-							</span>
-						</a>
-					</div>
-					))}
-				</div>
-			</div>
-		</section>
-	</div>
-);
+export default class Stage extends React.Component {
+	constructor(props) {
+		super(props);
+		console.log(props);
+	}
 
-export default FeaturedProducts;
+	renderLink(product) {
+		if (product.blank) {
+			return (
+				<a target="_blank" href={product.linkTarget}>
+					<img src={product.image} alt="test"/>
+					<span className="text-overlay">
+						<span>
+							{product.headline}
+						</span>
+					</span>
+				</a>
+			)
+		}else{
+			return (
+				<a href={product.linkTarget}>
+					<img src={product.image} alt="test"/>
+					<span className="text-overlay">
+						<span>
+							{product.headline}
+						</span>
+					</span>
+				</a>
+			)
+		}
+	}
+
+	render() {
+		return (
+			<div>
+				<section className="featured-products">
+					<div className="container">
+						<div className="row">
+							{this.props.featuredProducts.map(product => (
+								<div key={v4()} className="col-4 product">
+									{this.renderLink(product)}
+								</div>
+							))}
+						</div>
+					</div>
+				</section>
+			</div>
+		)
+	}
+}
