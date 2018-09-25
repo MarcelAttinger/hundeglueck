@@ -37,5 +37,6 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "NewPage", name: "newPage", widget: "hidden", default: "true"}
           - {label: Bühne, name: stage, widget: object, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}, {label: Unterüberschrift, name: subheadline, widget: string}, {label: Linkziel, name: buttonTarget, widget: string}, {label: Linktext, name: buttonText, widget: string}]}
           - {label: Über uns Beschreibung, name: description, widget: text}

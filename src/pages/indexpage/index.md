@@ -22,6 +22,19 @@ featuredProducts:
     headline: Hundephysiotherapie
     image: img/products/dog2.jpg
     linkTarget: 'http://www.pfotenimpuls.de/'
+lrteasers:
+  - image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    headline: Ernährungsberatung
+    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+  - image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    headline: Annifit
+    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+  - image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    headline: Hundephysio
+    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
 wideTeaser:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus

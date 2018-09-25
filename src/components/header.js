@@ -45,7 +45,7 @@ export default class Header extends React.Component {
 								<Link to="/">
 									<div id="logo">
 										<h1 className="h6 navbar-brand">Hundeglück Schönbuch</h1>
-										<span>Gesundes rund um den Hund</span>
+										<span>Hundherum gesund</span>
 									</div>
 								</Link>
 							</div>

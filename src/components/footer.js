@@ -24,7 +24,7 @@ const Footer = () => (
 									<span>Telefon:</span>
 								</td>
 								<td>
-									<a href="#">07031 / 60635</a>
+									<a href="#">01573 6174643</a>
 								</td>
 							</tr>
 						</tbody>

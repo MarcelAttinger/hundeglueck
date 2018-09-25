@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import Stage from '../components/stage';
 import FeaturedProducts from '../components/featured-products';
 import WideTeaser from '../components/wide-teaser';
+import LeftRightTeaser from '../components/left-right-teaser';
 
 
 export default class IndexPage extends React.Component {
@@ -15,7 +16,7 @@ export default class IndexPage extends React.Component {
 				<Stage stageprops={posts[0].node.frontmatter.stage} />
 				<FeaturedProducts featuredProducts={posts[0].node.frontmatter.featuredProducts} />
 
-				{/*<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />*/}
+				<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />
 
 				<WideTeaser wideprops={posts[0].node.frontmatter.wideTeaser} />
 
@@ -72,6 +73,12 @@ export const pageQuery = graphql`
 	            buttonText
 	            buttonTarget
 	        }
+			lrteasers {
+                image
+				imageAlt
+				headline
+				paragraph
+			}
 	        wideTeaser { 
 	            headline
 	            description 

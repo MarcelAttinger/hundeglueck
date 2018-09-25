@@ -24,7 +24,7 @@ const ContactTemplate = () => {
 								<li>
 									<span className="phone">
 										<strong>Rufen Sie uns an!</strong>
-										07031 / 60662
+										01573 6174643
 									</span>
 								</li>
 								<li>
