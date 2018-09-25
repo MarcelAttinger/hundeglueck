@@ -49,7 +49,7 @@ h6 {
 // Standard Elements
 
 section{
-  padding: 5rem 0;
+  padding: 3rem 0;
 
   &.grey-background{
     background-color: $basic-grey;
@@ -88,6 +88,7 @@ ul.floating{
   outline: 0;
   padding: 8px 37px;
   text-transform: uppercase;
+  transition: all 0.35s ease-in-out;
 
   &:active,
   &:focus{
@@ -101,9 +102,18 @@ ul.floating{
     background: transparent;
 
     &:hover{
-      background-color: white;
-      border-color: $white;
-      color: $black;
+      background-color: $highlight;
+      border-color: $highlight;
+    }
+  }
+
+  &.btn-secondary{
+    background-color: $highlight;
+    border-color: $highlight;
+
+    &:hover{
+      background-color: $white;
+      color: $highlight;
     }
   }
 }

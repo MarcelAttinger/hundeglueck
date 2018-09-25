@@ -1,5 +1,5 @@
 header {
-  background-color: $black;
+  background-color: $highlight;
   color: $white;
   letter-spacing: 3px;
   padding-bottom: 25px;
@@ -11,31 +11,56 @@ header {
   width: 100%;
   z-index: 9999;
 
-  &.home{
+  &.home,
+  &.about{
     background-color: transparent;
+
+    .header-bottom {
+      .col {
+        .main-navigation {
+          li {
+            a {
+              color: rgba(255, 255, 255, 0.7);
+            }
+          }
+        }
+      }
+    }
   }
 
-  &.navbar-shrink{
-    background-color: rgba(10, 10, 10, 1);
+  &.navbar-shrink.home,
+  &.navbar-shrink.about{
+    background-color: $highlight;
     padding: 15px 0;
+
+    .header-bottom {
+      .col {
+        .main-navigation {
+          li {
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
   }
 
   .header-bottom {
 
-    .col{
+    .col {
       align-items: center;
       display: flex;
       justify-content: space-between;
-
 
       .logo-wrapper {
         position: relative;
         width: 250px;
 
-        a{
+        a {
           color: $white;
 
-          &:hover{
+          &:hover {
             color: $white;
           }
 
@@ -46,6 +71,11 @@ header {
             justify-content: center;
             padding: 5px;
             z-index: 2;
+
+            img {
+              height: 60px;
+              width: 60px;
+            }
 
             h1 {
               font-size: 22px;
@@ -73,21 +103,21 @@ header {
         font-size: 11px;
         height: 100%;
 
-        li{
+        li {
 
-          a{
-            color: rgba(255,255,255,0.7);
+          a {
+            color: $white;
             font-size: 14px;
             transition: color 0.35s ease-in-out;
 
-            &:hover{
+            &:hover {
               color: $white;
             }
           }
         }
       }
 
-      .mail{
+      .mail {
         font-size: 18px;
         margin-left: auto;
       }
