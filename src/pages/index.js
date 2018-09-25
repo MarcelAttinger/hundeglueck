@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
 				<Stage stageprops={posts[0].node.frontmatter.stage} />
 				<FeaturedProducts featuredProducts={posts[0].node.frontmatter.featuredProducts} />
 
-				<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />
+				{/*<LeftRightTeaser leftRightTeasers = {posts[0].node.frontmatter.lrteasers} />*/}
 
 				<WideTeaser wideprops={posts[0].node.frontmatter.wideTeaser} />
 
