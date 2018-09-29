@@ -13,12 +13,12 @@ h6 {
   @include heading-font;
   position: relative;
 
-  &.underline-headline{
+  &.underline-headline {
     display: inline-block;
     margin-bottom: 25px;
     padding-bottom: 10px;
 
-    &:after{
+    &:after {
       background-color: $textcolor;
       bottom: 0;
       content: "";
@@ -31,57 +31,64 @@ h6 {
   }
 }
 
-
 //Grid Override
-.container{
-  @media (min-width: 1200px){
-     max-width: 1200px;
+.container {
+  @media  (max-width: 1199px) {
+    max-width: 100% !important;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
 // Margin Top for Pages except Home
 .blog-overview,
 .blog-post,
-.contact{
+.contact {
   margin-top: 124px;
+
+  @include grid-media-query('before-tablet'){
+    margin-top: 155px;
+  }
 }
 
 // Standard Elements
 
-section{
+section {
   padding: 3rem 0;
 
-  &.grey-background{
+  &.grey-background {
     background-color: $basic-grey;
   }
 }
 
-a{
+a {
   color: $textcolor;
   transition: color 0.35s ease-in-out;
 
-  &:hover{
+  &:hover {
     color: $highlight;
     text-decoration: none;
   }
 }
 
-ul.floating{
+ul.floating {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 
-  li{
+  li {
     margin-right: 20px;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
 }
 
-.btn{
+.btn {
   border-radius: 0;
   font-size: 11px;
   letter-spacing: 2px;
@@ -91,50 +98,49 @@ ul.floating{
   transition: all 0.35s ease-in-out;
 
   &:active,
-  &:focus{
+  &:focus {
     box-shadow: none;
     outline: 0;
   }
 
-  &.btn-primary{
+  &.btn-primary {
     border: 1px solid rgba(255, 255, 255, 0.75);
     color: #fff;
     background: transparent;
 
-    &:hover{
+    &:hover {
       background-color: $highlight;
       border-color: $highlight;
     }
   }
 
-  &.btn-secondary{
+  &.btn-secondary {
     background-color: $highlight;
     border-color: $highlight;
 
-    &:hover{
+    &:hover {
       background-color: $white;
       color: $highlight;
     }
   }
 }
 
-
 //Google Maps
-.google-map{
+.google-map {
   height: 500px;
   width: 100%;
 
-  .fa-map-marker{
+  .fa-map-marker {
     left: -37px;
     position: relative;
     top: -50px;
 
-    &:before{
+    &:before {
       color: #EA4335;
       font-size: 50px;
     }
 
-    &:after{
+    &:after {
       background-color: #822D28;
       border-radius: 50%;
       content: "";

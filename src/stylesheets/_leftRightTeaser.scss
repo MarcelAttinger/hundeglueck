@@ -9,6 +9,10 @@
 
   img{
     max-width: 100%;
+
+    @include grid-media-query('before-tablet'){
+      margin-bottom: 20px;
+    }
   }
 
   .text{

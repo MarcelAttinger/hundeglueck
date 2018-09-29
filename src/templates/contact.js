@@ -12,7 +12,7 @@ const ContactTemplate = () => {
 				</div>
 				<div className="container">
 					<div className="row">
-						<div className="col-sm-6">
+						<div className="col-md-6">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem earum et
 							   iure maxime nam nesciunt nulla, quas temporibus totam. Ab aliquam aspernatur assumenda
 							   aut autem corporis deserunt dolorem doloribus eos est ex expedita harum hic in itaque
@@ -41,7 +41,7 @@ const ContactTemplate = () => {
 								</li>
 							</ul>
 						</div>
-						<div className="col-sm-6">
+						<div className="col-md-6">
 							<form action="#">
 								<div className="form-group">
 									<input type="text" id="name" className="form-control" placeholder="Name" />

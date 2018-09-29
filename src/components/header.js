@@ -8,6 +8,10 @@ export default class Header extends React.Component {
 		super(props);
 	}
 
+	toggleMenu() {
+		document.querySelector('.main-navigation').classList.toggle('open');
+	}
+
 	// Collapse Navbar
 	navbarCollapse() {
 		if (window.scrollY > 50) {
@@ -50,6 +54,8 @@ export default class Header extends React.Component {
 								</Link>
 							</div>
 							<nav className="main-navigation">
+								<div onClick={this.toggleMenu} className="menu-toggle fa fa-bars">Menu</div>
+								<div onClick={this.toggleMenu} className="close fa fa-times">Close</div>
 								<ul className="floating">
 									<li>
 										<Link to="/">Home</Link>

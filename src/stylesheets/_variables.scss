@@ -35,3 +35,30 @@ $breakpoint-tablet: map-get($breakpoints, before-tablet);
 $breakpoint-after-tablet: map-get($breakpoints, tablet);
 $breakpoint-before-desk: map-get($breakpoints, before-desk);
 $breakpoint-desk: map-get($breakpoints, desk);
+
+
+/**
+ * Taken from csswizardry-grids
+ * ---------
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+@mixin grid-media-query($media-query) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+  }
+
+  @if not $breakpoint-found {
+    @warn "Breakpoint ‘#{$media-query}’ does not exist";
+  }
+}

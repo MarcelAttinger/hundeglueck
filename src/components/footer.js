@@ -7,10 +7,11 @@ const Footer = () => (
 	<footer>
 		<div className="container">
 			<div className="row">
-				<div className="col-sm-3 footer-links">
+				<div className="col-md-4 col-lg-3 footer-links">
 					<h3>Kontakt</h3>
-					<table>
-						<tbody>
+					<div className="table-wrapper">
+						<table>
+							<tbody>
 							<tr>
 								<td>
 									<span>Adresse: </span>
@@ -27,15 +28,16 @@ const Footer = () => (
 									<a href="#">01573 6174643</a>
 								</td>
 							</tr>
-						</tbody>
-					</table>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div className="col-sm-3 footer-links">
+				<div className="col-md-3 footer-links">
 					<h3>Informationen</h3>
 					<Link to="/imprint/">Impressum</Link>
 					<Link to="/data-protection/">Datenschutzerklärung</Link>
 				</div>
-				<div className="col-sm-6">
+				<div className="col-md-5">
 					<div className="social-media">
 						<h3>Social Media</h3>
 						<div>

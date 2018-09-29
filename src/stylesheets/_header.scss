@@ -57,6 +57,10 @@ header {
         position: relative;
         width: 250px;
 
+        @include grid-media-query('before-tablet'){
+          padding: 15px 0 16px;
+        }
+
         a {
           color: $white;
 
@@ -103,15 +107,67 @@ header {
         font-size: 11px;
         height: 100%;
 
-        li {
+        &.open{
+          ul{
+            @include grid-media-query('before-tablet'){
+              display: block;
+            }
+          }
 
-          a {
-            color: $white;
-            font-size: 14px;
-            transition: color 0.35s ease-in-out;
+          .menu-toggle{
+            display: none;
+          }
 
-            &:hover {
+          .close{
+            display: block;
+          }
+        }
+
+        .menu-toggle{
+          cursor: pointer;
+          display: none;
+          font-size: 0;
+
+          @include grid-media-query('before-tablet'){
+            display: block;
+          }
+
+          &:before{
+            font-size: 30px;
+          }
+        }
+
+        .close{
+          cursor: pointer;
+          display: none;
+          font-size: 0;
+
+          &:before{
+            font-size: 30px;
+          }
+        }
+
+        ul{
+
+          @include grid-media-query('before-tablet'){
+            display: none;
+          }
+
+          li {
+
+            a {
+              border-bottom: 2px solid transparent;
               color: $white;
+              font-size: 14px;
+              padding-bottom: 4px;
+              transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+
+              @include grid-media-query('tablet'){
+                &:hover {
+                  border-color: $white;
+                  color: $white;
+                }
+              }
             }
           }
         }

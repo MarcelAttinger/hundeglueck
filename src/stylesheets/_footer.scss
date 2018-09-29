@@ -3,6 +3,10 @@ footer{
   color: $white;
   padding: 20px 10px 10px;
 
+  @include grid-media-query('before-mobile'){
+    text-align: center;
+  }
+
   h3{
     font-size: 16px;
     font-weight: bold;
@@ -10,17 +14,25 @@ footer{
 
   .footer-links{
 
-    table{
-      tr {
-        td{
-          vertical-align: top;
+    .table-wrapper{
+      @include grid-media-query('before-mobile'){
+        display: flex;
+        justify-content: center;
+      }
 
-          &:first-child{
-            padding-right: 10px;
+      table{
+        tr {
+          td{
+            vertical-align: top;
+
+            &:first-child{
+              padding-right: 10px;
+            }
           }
         }
       }
     }
+
 
     a{
       color: $white;
@@ -31,7 +43,7 @@ footer{
       }
 
       &:hover{
-        color: $highlight;
+        color: $white;
       }
     }
   }
@@ -39,8 +51,16 @@ footer{
   .social-media{
     float: right;
 
+    @include grid-media-query('before-mobile'){
+      float: none;
+    }
+
     div{
       display: flex;
+
+      @include grid-media-query('before-mobile'){
+        justify-content: center;
+      }
 
       a{
         color: $white;

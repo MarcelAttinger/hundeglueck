@@ -13,7 +13,7 @@ class BlogOverview extends React.Component {
 
 		const childElements = posts.map(({node}) => {
 			return (
-				<div className="col-4 teaser" key={node.fields.slug}>
+				<div className="col-lg-4 col-md-6 teaser" key={node.fields.slug}>
 					<Link to={node.fields.slug}>
 						<img src={node.frontmatter.previewImage} alt="test"/>
 						<span className="text-overlay">
@@ -42,11 +42,11 @@ class BlogOverview extends React.Component {
 								</div>
 								<div className="text">
 									<h1>Entdecken Sie meinen Blog</h1>
-									<div className="subheadline">
+									<p>
 										In meiner langjährigen Erfahrung als Hundehalterin und Trainerin habe ich selbst
 										viel im Internet recherchiert und gestöbert.
 										Heute möchte ich mein Wissen teilen und lade gerne zum Austausch ein.
-									</div>
+									</p>
 								</div>
 							</div>
 						</div>
