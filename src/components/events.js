@@ -19,10 +19,9 @@ export default class Events extends React.Component {
 							</div>
 							<div className="text">
 								<span className="date">{teaser.startDate} - {teaser.endDate}</span>
-								<h3>Weihnachtsbaumverkauf</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque error fugiat
-								   iusto placeat porro quas, qui recusandae sit sunt voluptas.</p>
-								<Link to="/blog-overview/"><span className="fa fa-angle-right">Arrow</span><span>Mehr lesen</span></Link>
+								<h3>{teaser.headline}</h3>
+								<p>{teaser.paragraph}</p>
+								<Link to={teaser.linkTarget}><span className="fa fa-angle-right">Arrow</span><span>{teaser.linkDesc}</span></Link>
 							</div>
 						</div>
 					))}
