@@ -68,13 +68,13 @@ wideTeaser:
     molestiae numquam, placeat quasi quo voluptatum.
   headline: Wir stellen uns vor
 events:
-  - endDate: 2016-12-17T15:04:10.000Z
+  - endDate: '2018-12-06'
     headline: Weihnachtsbaumverkauf
     image: img/chaya.jpg
     imageAlt: Hund Chaya
     linkDesc: Mehr erfahren
     linkTarget: /nutrition-tips/
-    startDate: 2016-12-17T15:04:10.000Z
+    startDate: '2018-12-06'
     paragraph: >-
       Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
       schnell wie möglich die Texte liefern.
