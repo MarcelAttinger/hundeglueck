@@ -39,6 +39,8 @@ lrteasers:
     imageAlt: Hund Chaya
     headline: Hundephysio
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+    linkTarget: /nutrition-tips/
+    linkDesc: Zur Übersicht
   - image: img/chaya.jpg
     imageAlt: Hund Chaya
     headline: Hundeleckerlis
