@@ -9,6 +9,39 @@ stage:
   subHeadline: >-
     Bei uns steht Ihr Hund im Vordergrund! Wir bieten alles, damit sich Ihr
     treuer Begleiter rundum wohl fühlt
+lrteasers:
+  - headline: Ernährungsberatung
+    image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    linkDesc: Mehr erfahren
+    linkTarget: /nutrition-tips/
+    paragraph: >-
+      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
+      schnell wie möglich die Texte liefern.
+  - headline: Annifit
+    image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    linkDesc: Zur Übersicht
+    linkTarget: /nutrition-tips/
+    paragraph: >-
+      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
+      schnell wie möglich die Texte liefern.
+  - headline: Hundephysio
+    image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    linkDesc: ''
+    linkTarget: ''
+    paragraph: >-
+      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
+      schnell wie möglich die Texte liefern.
+  - headline: Hundeleckerlis
+    image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    linkDesc: ''
+    linkTarget: ''
+    paragraph: >-
+      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
+      schnell wie möglich die Texte liefern.
 featuredProducts:
   - blank: true
     headline: Anifit Produkte
@@ -22,31 +55,6 @@ featuredProducts:
     headline: Hundephysiotherapie
     image: img/products/dog2.jpg
     linkTarget: 'http://www.pfotenimpuls.de/'
-lrteasers:
-  - image: img/chaya.jpg
-    imageAlt: Hund Chaya
-    headline: Ernährungsberatung
-    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
-    linkTarget: /nutrition-tips/
-    linkDesc: Mehr erfahren
-  - image: img/chaya.jpg
-    imageAlt: Hund Chaya
-    headline: Annifit
-    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
-    linkTarget: /nutrition-tips/
-    linkDesc: Zur Übersicht
-  - image: img/chaya.jpg
-    imageAlt: Hund Chaya
-    headline: Hundephysio
-    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
-    linkTarget: /nutrition-tips/
-    linkDesc: Zur Übersicht
-  - image: img/chaya.jpg
-    imageAlt: Hund Chaya
-    headline: Hundeleckerlis
-    paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
-    linkTarget: /nutrition-tips/
-    linkDesc: Zur Übersicht
 wideTeaser:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
