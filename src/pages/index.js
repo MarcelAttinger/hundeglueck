@@ -78,6 +78,8 @@ export const pageQuery = graphql`
 				imageAlt
 				headline
 				paragraph
+				linkTarget
+				linkDesc
 			}
 	        wideTeaser { 
 	            headline

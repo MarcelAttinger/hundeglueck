@@ -27,10 +27,14 @@ lrteasers:
     imageAlt: Hund Chaya
     headline: Ernährungsberatung
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+    linkTarget: /nutrition-tips/
+    linkDesc: Mehr erfahren
   - image: img/chaya.jpg
     imageAlt: Hund Chaya
     headline: Annifit
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+    linkTarget: /nutrition-tips/
+    linkDesc: Zur Übersicht
   - image: img/chaya.jpg
     imageAlt: Hund Chaya
     headline: Hundephysio
@@ -39,6 +43,8 @@ lrteasers:
     imageAlt: Hund Chaya
     headline: Hundeleckerlis
     paragraph: Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so schnell wie möglich die Texte liefern.
+    linkTarget: /nutrition-tips/
+    linkDesc: Zur Übersicht
 wideTeaser:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus

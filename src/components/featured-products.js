@@ -4,7 +4,6 @@ import {v4} from 'uuid';
 export default class Stage extends React.Component {
 	constructor(props) {
 		super(props);
-		console.log(props);
 	}
 
 	renderLink(product) {
