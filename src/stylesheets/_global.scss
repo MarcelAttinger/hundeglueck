@@ -33,12 +33,12 @@ h6 {
 
 //Grid Override
 .container {
-  @media  (max-width: 1199px) {
+  @media  (max-width: 1139px) {
     max-width: 100% !important;
   }
 
-  @media (min-width: 1200px) {
-    max-width: 1200px;
+  @media (min-width: 1140px) {
+    max-width: 1140px;
   }
 }
 

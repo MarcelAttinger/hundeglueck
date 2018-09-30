@@ -22,10 +22,10 @@ export default class LeftRightTeaser extends React.Component {
 					<section key={v4()} className="left-right-teaser">
 						<div className="container">
 							<div className="row">
-								<div className="col-lg-8 image">
+								<div className="col-lg-6 image">
 									<img src={teaser.image} alt={teaser.imageAlt}/>
 								</div>
-								<div className="col-lg-4 text">
+								<div className="col-lg-6 text">
 									<h3>{teaser.headline}</h3>
 									<p>{teaser.paragraph}</p>
 									{this.renderLink(teaser)}
