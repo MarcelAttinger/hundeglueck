@@ -42,17 +42,6 @@ lrteasers:
     paragraph: >-
       Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
       schnell wie möglich die Texte liefern.
-events:
-  - headline: Weihnachtsbaumverkauf
-    endDate: 2016-12-17T15:04:10.000Z
-    startDate: 2016-12-17T15:04:10.000Z
-    image: img/chaya.jpg
-    imageAlt: Hund Chaya
-    linkDesc: Mehr erfahren
-    linkTarget: /nutrition-tips/
-    paragraph: >-
-      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
-      schnell wie möglich die Texte liefern.
 featuredProducts:
   - blank: true
     headline: Anifit Produkte
@@ -78,5 +67,24 @@ wideTeaser:
     eligendi, error est eveniet exercitationem explicabo illum iure magnam
     molestiae numquam, placeat quasi quo voluptatum.
   headline: Wir stellen uns vor
+events:
+  - endDate: 2016-12-17T15:04:10.000Z
+    headline: Weihnachtsbaumverkauf
+    image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    linkDesc: Mehr erfahren
+    linkTarget: /nutrition-tips/
+    paragraph: >-
+      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
+      schnell wie möglich die Texte liefern.
+    startDate: 2016-12-17T15:04:10.000Z
+  - endDate: '2018-12-14'
+    headline: Hundeseminar 1
+    image: /img/chaya.jpg
+    imageAlt: Hund im Wald
+    linkDesc: Mehr erfahren
+    linkTarget: /blog-overview/
+    paragraph: Seminar für Hunde bei uns in Altdorf. Infos folgen bald
+    startDate: '2018-12-06'
 ---
 
