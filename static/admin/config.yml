@@ -30,7 +30,6 @@ collections:
            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
            - {label: "NewPage", name: "newPage", widget: "hidden", default: "false"}
            - {label: Bühne, name: stage, widget: object, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}, {label: Unterüberschrift, name: subHeadline, widget: string}, {label: Linkziel, name: buttonTarget, widget: string}, {label: Linktext, name: buttonText, widget: string}]}
-           - {label: Links- und Rechts Teaser, name: lrteasers, widget: object, fields: [{label: Bild, name: image, widget: image}, {label: Alttext Bild, name: imageAlt, widget: string}, {label: Überschrift, name: headline, widget: string}, {label: Text, name: paragraph, widget: text}, {label: Linkziel, name: linkTarget, widget: string}, {label: Linktext, name: linkDesc, widget: string}]}
            - {label: Bildteaser, name: featuredProducts, widget: list, fields: [{label: Bild, name: image, widget: image}, {label: Überschrift, name: headline, widget: string}, {label: Linkziel, name: linkTarget, widget: string}, {label: Neuen Tab öffnen, name: blank, widget: boolean, default: false}]}
            - {label: Vorstellung, name: wideTeaser, widget: object, fields: [{label: Überschrift, name: headline, widget: string}, {label: Beschreibung, name: description, widget: text}]}
       - file: "src/pages/about/index.md"
