@@ -42,6 +42,17 @@ lrteasers:
     paragraph: >-
       Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
       schnell wie möglich die Texte liefern.
+events:
+  - headline: Weihnachtsbaumverkauf
+    endDate: 2016-12-17T15:04:10.000Z
+    startDate: 2016-12-17T15:04:10.000Z
+    image: img/chaya.jpg
+    imageAlt: Hund Chaya
+    linkDesc: Mehr erfahren
+    linkTarget: /nutrition-tips/
+    paragraph: >-
+      Hier werde ich ausführlich über artgerechte Hundehaltung berichten und so
+      schnell wie möglich die Texte liefern.
 featuredProducts:
   - blank: true
     headline: Anifit Produkte

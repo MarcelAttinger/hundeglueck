@@ -13,6 +13,7 @@ const Layout = ({children, data, location}) => (
 			<meta name="description" content="Freelance Web Developer Marcel Attinger"/>
 			<meta name="author" content="Marcel Attinger"/>
 			<title>Hundeglück Schönbuch</title>
+			<html lang="de" />
 		</Helmet>
 		<Header siteTitle={data.site.siteMetadata.title}/>
 		<div>{children()}</div>

@@ -10,8 +10,8 @@ export default class LeftRightTeaser extends React.Component {
 	}
 
 	renderLink(teaser) {
-		if(typeof teaser.linkTarget != undefined){
-			return (<Link to={teaser.linkTarget}>{teaser.linkDesc}</Link>)
+		if(teaser.linkTarget !== ''){
+			return (<Link to={teaser.linkTarget}><span className="fa fa-angle-right">Arrow</span><span>{teaser.linkDesc}</span></Link>)
 		}
 	}
 

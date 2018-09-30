@@ -4,6 +4,7 @@ import Stage from '../components/stage';
 import FeaturedProducts from '../components/featured-products';
 import WideTeaser from '../components/wide-teaser';
 import LeftRightTeaser from '../components/left-right-teaser';
+import Events from '../components/events';
 
 
 export default class IndexPage extends React.Component {
@@ -20,32 +21,7 @@ export default class IndexPage extends React.Component {
 
 				<WideTeaser wideprops={posts[0].node.frontmatter.wideTeaser} />
 
-				<section className="container">
-					<h3>Lese hier meine nächsten Einträge:</h3>
-					{posts.map(({node: post}) => (
-						<div
-							className="content"
-							style={{border: '1px solid #eaecee', padding: '2em 4em'}}
-							key={post.id}
-						>
-							<p>
-								<Link className="has-text-primary" to={post.fields.slug}>
-									titel
-								</Link>
-								<span> &bull; </span>
-								<small>{post.frontmatter.date}</small>
-							</p>
-							<p>
-								{post.excerpt}
-								<br />
-								<br />
-								<Link className="button is-small" to={post.fields.slug}>
-									Keep Reading →
-								</Link>
-							</p>
-						</div>
-					))}
-				</section>
+				<Events events = {posts[0].node.frontmatter.events} />
 			</div>
 		)
 	}
@@ -84,6 +60,16 @@ export const pageQuery = graphql`
 	        wideTeaser { 
 	            headline
 	            description 
+	        }
+	        events {
+	            startDate
+	            endDate
+	            image
+	            imageAlt
+	            headline
+	            paragraph
+	            linkTarget
+	            linkDesc
 	        }
 	        featuredProducts {
 	            image

@@ -1,0 +1,46 @@
+.events{
+  h2{
+    display: inline-block;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:after{
+      background-color: $black;
+      border-radius: 5px;
+      bottom: -15px;
+      content: "";
+      display: block;
+      height: 5px;
+      left: 0;
+      position: absolute;
+      width: 35%;
+    }
+  }
+
+  .event-teaser{
+    img{
+      margin-bottom: 5px;
+      width: 100%;
+    }
+
+    .date{
+      color: $middlegray;
+      font-size: 12px;
+    }
+
+    h3{
+      font-size: 22px;
+    }
+
+    a{
+      .fa{
+        font-size: 0;
+        margin-right: 4px;
+
+        &:before{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
